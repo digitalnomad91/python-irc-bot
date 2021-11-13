@@ -1,0 +1,5 @@
+#!/bin/sh
+
+if [ $(ps aux | grep "pybot\.py" | grep -v grep | wc -l | tr -s "\n") -eq 0 ]; then ./restart_pybot.sh ; fi
+
+
